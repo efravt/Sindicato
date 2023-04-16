@@ -32,7 +32,7 @@ Route::group(['middleware' => 'guest'], function(){
     Route::get('login', [LoginController::class,'showLoginForm'])->name('login');
     Route::post('login', [LoginController::class,'login_attemps'])->name('login_attemps');
 });
-
+Route::get('staff/pdf',[StaffController::class,'pdf'])->name('staff.pdf');
 Route::group(['middleware' => ['auth']], function(){
     // Cierre de sesión
     Route::post('logout', [LoginController::class,'logout'])->name('logout');
@@ -145,4 +145,6 @@ Route::group(['middleware' => ['auth']], function(){
 		Route::put('actualizar-detalle-mem/guardar/{id}',[MemberController::class,'updateDetail'])->name('memberDetail.update');
 		Route::put('member-detalle-mem/activar/{id}',[MemberController::class,'disableDetail'])->name('memberDetail.disable');
 		Route::put('member-detalle-mem/delete/{id}',[MemberController::class,'deleteDetail'])->name('memberDetail.delete');
+
+		
 });

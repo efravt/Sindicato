@@ -8,6 +8,7 @@ use App\Models\StaffSocial;
 use App\Models\Social;
 use App\Models\StaffDetail;
 use DB;
+use Barryvdh\DomPDF\Facade\Pdf;
 
 class StaffController extends Controller
 {
@@ -43,12 +44,16 @@ class StaffController extends Controller
 							</i>
 						</button>
 					</a>
-					<a href="{{ route(\'staffSocial.get\',$codigo) }}">
-						<button class="btn btn-icon btn-primary btn-sm waves-effect waves-light" type="button" title="Redes Sociales">
+
+					<a href="{{ route(\'staff.pdf\',$codigo) }}">
+						<button class="btn btn-icon btn-primary btn-sm waves-effect waves-ligh" type="button" title="pdf">
 							<i class="feather icon-folder">
 							</i>
 						</button>
-					</a>')
+					</a>
+
+')
+
                 ->rawColumns(['state', 'action'])
                 ->toJson();
 	}
@@ -100,14 +105,19 @@ class StaffController extends Controller
 	 * URL : actualizar-Administracione/{id}
 	 * Method: GET
 	 */
-	public function editStaff($id){
-		
-        $staff 	 = Staff::FindOrFail($id);
 
-    	return view('staff.edit', [
-    		'staff'			=> $staff
-    	]);
+
+
+	public function pdf(){
+
+		$staff 	 = Staff::all();
+		$pdf = Pdf::setPaper('letter')->loadView('staff.pdf',compact('staff'));
+        return $pdf->stream();
+       
 	}
+
+
+
 	/**
 	 * Se almacena toda la información del nuevo Administracione con la Administracione
 	 * URL : nuevo-Administracione/guardar
