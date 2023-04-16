@@ -138,11 +138,6 @@
     <!-- BEGIN: Page Vendor JS-->
     <script src="{!! asset('app-assets/vendors/js/forms/select/select2.full.min.js') !!}"></script>
 
-    @if(request()->is('nuevo-staff')|| request()->is('actualizar-staff/*'))
-    <script src="{!! asset('app-assets/vendors/js/editors/quill/katex.min.js') !!}"></script>
-    <script src="{!! asset('app-assets/vendors/js/editors/quill/highlight.min.js') !!}"></script>
-    <script src="{!! asset('app-assets/vendors/js/editors/quill/quill.min.js') !!}"></script>
-    @endif
     {{-- DataTable --}}
     <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.min.js') }}"></script>
     <script src="{{ asset('app-assets/vendors/js/tables/datatable/datatables.buttons.min.js') }}"></script>
@@ -160,10 +155,6 @@
     <!-- END: Theme JS-->
 
     <!-- BEGIN: Page JS-->
-    {{-- <script src="{!! asset('app-assets/js/scripts/extensions/i18n.js') !!}"></script> --}}
-    @if(request()->is('nuevo-staff')|| request()->is('actualizar-staff/*'))
-    <script src="../../../app-assets/js/scripts/editors/editor-quill.js"></script>
-    @endif
     
     <script src="{!! asset('app-assets/js/scripts/forms/select/form-select2.js') !!}"></script>
     <script src="{!! asset('app-assets/js/scripts/pages/app-user.js') !!}"></script>

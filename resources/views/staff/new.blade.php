@@ -9,13 +9,13 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0" style="color:black;">Directiva</h2>
+                        <h2 class="content-header-title float-left mb-0" style="color:black;">Socio</h2>
                     </div>
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-6">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item text-t"><b>Nuevo Integrante</b>
+                                    <li class="breadcrumb-item text-t"><b>Nuevo Socio</b>
                                     </li>
                                 </ol>
                             </div>
@@ -39,65 +39,84 @@
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Nombre:</label>
-                                        <input type="text" autocomplete="off" id="name" name="name" class="form-control" placeholder="Introduzca nombre">
+                                        <input type="text" autocomplete="off" id="nombre" name="nombre" class="form-control" placeholder="Introduzca nombre">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Apellido Paterno:</label>
-                                        <input type="text" autocomplete="off" id="paternal" name="paternal" class="form-control" placeholder="Introduzca apellido paterno">
+                                        <input type="text" autocomplete="off" id="paterno" name="paterno" class="form-control" placeholder="Introduzca apellido paterno">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Apellido Materno:</label>
-                                        <input type="text" autocomplete="off" id="maternal" name="maternal" class="form-control" placeholder="Introduzca apellido materno">
+                                        <input type="text" autocomplete="off" id="materno" name="materno" class="form-control" placeholder="Introduzca apellido materno">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">CI:</label>
                                         <input type="text" autocomplete="off" id="ci" name="ci" class="form-control" placeholder="Introduzca cédula de identidad">
                                     </div>
-                                    <div class="form-group col-lg-4">
+                                    <div class="form-group col-lg-2">
                                         <span class="required-input">*</span>
-                                        <label class="text-show">Email:</label>
-                                        <input type="text" autocomplete="off" id="email" name="email" class="form-control" placeholder="Introduzca email">
+                                        <label class="text-show">Ingreso:</label>
+                                        <input type="text" autocomplete="off" id="ingreso" name="ingreso" class="form-control" placeholder="Introduzca ingreso">
                                     </div>
-                                    <div class="form-group col-lg-4">
+                                    <div class="form-group col-lg-2">
                                         <span class="required-input">*</span>
-                                        <label class="text-show">Celular:</label>
-                                        <input type="text" autocomplete="off" id="phone" name="phone" class="form-control" placeholder="Introduzca número de celular">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <label class="text-show">Teléfono:</label>
-                                        <input type="text" autocomplete="off" id="phone1" name="phone1" class="form-control" placeholder="Introduzca número de telefono">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">País:</label>
-                                        <input type="text" autocomplete="off" id="country" name="country" class="form-control" placeholder="Introduzca Pais">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Departamento\Ciudad:</label>
-                                        <input type="text" autocomplete="off" id="city" name="city" class="form-control" placeholder="Ejm: La Paz, El Alto">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Títulos:</label>
-                                        <textarea name="specialty" id="specialty" class="form-control" cols="30" rows="3" placeholder="Ejm: Cirujano Dentista, Doctor en Ciencias ..."></textarea>
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Rol:</label>
-                                        <input type="text" autocomplete="off" id="rol" name="rol" class="form-control" placeholder="Ingrese rol en la directiva">
+                                        <label class="text-show">Numero:</label>
+                                        <input type="text" autocomplete="off" id="numero" name="numero" class="form-control" placeholder="Introduzca número de celular">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <label class="text-show">Foto:</label>
-                                        <input type="file" accept="image/*" id="photo" name="photo" class="form-control">
+                                        <input type="file" accept="image/*" id="foto" name="foto" class="form-control">
                                     </div>
-                                    
                                     <div class="form-group col-lg-12">
-                                        <label class="text-show">Bibliografía:</label>
-                                        <textarea name="edit_bibliography" id="edit_bibliography" class="form-control" cols="30" rows="6" placeholder="Ingresar bibliografia ..."></textarea>
+                                        <h4 class="card-title border-bottom py-1 mb-0 font-medium-2">Vehiculo Principal</h4>
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Marca:</label>
+                                        <input type="text" autocomplete="off" id="marca" name="marca" class="form-control" placeholder="Introduzca marca">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Color:</label>
+                                        <input type="text" autocomplete="off" id="color" name="color" class="form-control" placeholder="Introduzca apellido color">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Modelo:</label>
+                                        <input type="text" autocomplete="off" id="modelo" name="modelo" class="form-control" placeholder="Introduzca apellido modelo">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Capacidad:</label>
+                                        <input type="text" autocomplete="off" id="capacidad" name="capacidad" class="form-control" placeholder="Introduzca cédula de capacidad">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Clase:</label>
+                                        <input type="text" autocomplete="off" id="clase" name="clase" class="form-control" placeholder="Introduzca clase">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Tipo Vehiculo:</label>
+                                        <input type="text" autocomplete="off" id="tipo_vehiculo" name="tipo_vehiculo" class="form-control" placeholder="Introduzca número de tipo vehiculo">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Categoria:</label>
+                                        <input type="text" autocomplete="off" id="categoria" name="categoria" class="form-control" placeholder="Introduzca número de categoria">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Llantas:</label>
+                                        <input type="text" autocomplete="off" id="llantas" name="llantas" class="form-control" placeholder="Introduzca número de llantas">
+                                    </div>
+                                    <div class="form-group col-lg-4">
+                                        <span class="required-input">*</span>
+                                        <label class="text-show">Placa:</label>
+                                        <input type="text" autocomplete="off" id="placa" name="placa" class="form-control" placeholder="Introduzca número de placa">
                                     </div>
                                     <div class="col-12 text-right mt-2 cancel_form">
                                         <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect waves-light save_form" id="progress-bar">
@@ -123,15 +142,15 @@
         $("#form").validate({
             rules: {
                 // Se selecciona la etiqueta según el nombre (name)
-                name: {
+                nombre: {
                     required: true,
                     minlength: 3,
                 },
-                paternal: {
+                paterno: {
                     required: true,
                     minlength: 3,
                 },
-                maternal: {
+                materno: {
                     required: true,
                     minlength: 3,
                 },
@@ -139,47 +158,54 @@
                     required: true,
                     minlength: 6,
                 },
-                email:{
-                    required: true,
-                    email: true,
-                },
-                phone:{
-                    required: true,
-                    number: true,
-                    minlength: 6,
-                },
-                phone1:{
-                    number: true,
-                    minlength: 6,
-                },
-                city: {
+                ingreso:{
                     required: true,
                     minlength: 3,
                 },
-                country: {
+                numero:{
                     required: true,
-                    minlength: 3,
+                    number: true,
+                    minlength: 1,
                 },
-                rol:{
+                marca:{
                     required: true,
-                    minlength: 6,
                 },
-                specialty:{
+                color:{
                     required: true,
-                    minlength: 6,
+                },
+                modelo:{
+                    required: true,
+                },
+                capacidad:{
+                    required: true,
+                },
+                clase:{
+                    required: true,
+                },
+                tipo_vehiculo:{
+                    required: true,
+                },
+                categoria:{
+                    required: true,
+                },
+                llantas:{
+                    required: true,
+                },
+                placa:{
+                    required: true,
                 },
             },
             messages: {
                 // Se cambia el texto de ingles a español(personalizado)
-                name: {
+                nombre: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                paternal: {
+                paterno: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                maternal: {
+                materno: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
@@ -187,34 +213,41 @@
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 6 caracteres.",
                 },
-                email:{
-                    required: "Este campo es requerido",
-                    email: "Por favor, introduce una dirección de correo electrónico válida."
-                },
-                phone:{
-                    required: "Este campo es requerido",
-                    number: "Por favor, ingrese un número valido.",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
-                },
-                phone1:{
-                    number: "Por favor, ingrese un número valido.",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
-                },
-                city: {
+                ingreso:{
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                country: {
+                numero:{
                     required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 3 caracteres.",
+                    number: "Por favor, ingrese un número valido.",
+                    minlength: "Por favor, ingrese al menos 1 caracteres.",
                 },
-                rol: {
+                marca:{
                     required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
                 },
-                specialty: {
+                color:{
                     required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
+                },
+                modelo:{
+                    required: "Este campo es requerido",
+                },
+                capacidad:{
+                    required: "Este campo es requerido",
+                },
+                clase:{
+                    required: "Este campo es requerido",
+                },
+                tipo_vehiculo:{
+                    required: "Este campo es requerido",
+                },
+                categoria:{
+                    required: "Este campo es requerido",
+                },
+                llantas:{
+                    required: "Este campo es requerido",
+                },
+                placa:{
+                    required: "Este campo es requerido",
                 },
             },
             // Se aplicara el error del campo dentro de un span.
@@ -222,19 +255,24 @@
             // Almacenar información por medio de la URL generada en Laravel
             submitHandler: function(){
                 let formData = new FormData();
-                formData.append('name', $('#name').val());
-                formData.append('paternal', $('#paternal').val());
-                formData.append('maternal', $('#maternal').val());
-                formData.append('email', $('#email').val());
+                // Datos Personales
+                formData.append('nombre', $('#nombre').val());
+                formData.append('paterno', $('#paterno').val());
+                formData.append('materno', $('#materno').val());
                 formData.append('ci', $('#ci').val());
-                formData.append('phone', $('#phone').val());
-                formData.append('phone1', $('#phone1').val());
-                formData.append('country', $('#country').val());
-                formData.append('city', $('#city').val());
-                formData.append('rol', $('#rol').val());
-                formData.append('specialty', $('#specialty').val());
-                formData.append('bibliography', $('#edit_bibliography').val());
-                formData.append('photo', $('#photo')[0].files[0]);
+                formData.append('ingreso', $('#ingreso').val());
+                formData.append('numero', $('#numero').val());
+                formData.append('foto', $('#foto')[0].files[0]);
+                // Detalle de Vehiculo Principal
+                formData.append('marca', $('#marca').val());
+                formData.append('color', $('#color').val());
+                formData.append('modelo', $('#modelo').val());
+                formData.append('capacidad', $('#capacidad').val());
+                formData.append('clase', $('#clase').val());
+                formData.append('tipo_vehiculo', $('#tipo_vehiculo').val());
+                formData.append('categoria', $('#categoria').val());
+                formData.append('llanta', $('#llanta').val());
+                formData.append('placa', $('#placa').val());
 
                 $(".text-submit").html('Agregando');
                 $(".save_form").attr('disabled','disabled');
@@ -246,7 +284,6 @@
                     contentType:false,
                     data: formData,
                     success:function(data){
-                        console.log(data)
                         Swal.fire({
                             title: 'Exitoso!',
                             text: data.message,
