@@ -63,5 +63,5 @@ Route::group(['middleware' => ['auth']], function(){
 		Route::put('actualizar-detalle/guardar/{id}',[StaffController::class,'updateDetail'])->name('staffDetail.update');
 		Route::put('staff-detalle/activar/{id}',[StaffController::class,'disableDetail'])->name('staffDetail.disable');
 		Route::put('staff-detalle/delete/{id}',[StaffController::class,'deleteDetail'])->name('staffDetail.delete');
-		Route::get('staff/pdf',[StaffController::class,'pdf'])->name('staff.pdf');
+		Route::get('staff/pdf/{id}',[StaffController::class,'pdf'])->name('staff.pdf');
 });

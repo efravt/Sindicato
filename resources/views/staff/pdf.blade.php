@@ -172,18 +172,18 @@
  			<h6 style="text-align: center">DATOS-SOCIOS PROPIETARIO </h6>     
 				<table>                       
             		<thead>
-                    	<th><p id=" ">NOMBRE:&nbsp;"Efrain"<br>
-                            AP PATERNO:&nbsp;" Jimenez "<br>
-                            AP MATERNO:&nbsp;" Ortiz "<br>
-                            CEDULA:&nbsp;" 6989757 "<br>
-                            INGRESO:&nbsp; "2012 "<br>
-                            NUMERO DE SOCIO:&nbsp;"34 "
+                    	<th><p id=" ">NOMBRE: {{$staff->nombre}}<br>
+                            AP PATERNO: {{$staff->paterno}}<br>
+                            AP MATERNO: {{$staff->materno}}<br>
+                            CEDULA: {{$staff->ci}}<br>
+                            INGRESO: {{$staff->ingreso}}<br>
+                            NUMERO DE SOCIO: {{$staff->numero}}
                     	</p></th>
             		</thead>
 				</table>
 		</section>
 		<section id="socio2">
-			<p id="foto"><img src="{{asset('img_admin/default.png')}}" width="120" height="120"></p>
+			<p id="foto"><img src="img_admin/socio/{{$staff->foto}}" width="120" height="120"></p>
 			<b id="posfirma">FIRMA:</b>
 			<div id="firma"></div>
 		</section>
@@ -195,62 +195,64 @@
  			<h6 style="text-align: center">DATOS DEL VEHICULO </h6>     
 				<table>                       
             		<thead>
-                    	<th><p id=" " >MARCA:&nbsp; Volvo<br>
-                            COLOR: &nbsp; Blanco<br>
-                            MODELO: &nbsp; 2017<br>
-                            CAPACIDAD: &nbsp; 17 Toneladas
+                    	<th><p id=" " >MARCA:&nbsp; {{$vehiculo1->marca}}<br>
+                            COLOR: &nbsp; {{$vehiculo1->color}}<br>
+                            MODELO: &nbsp; {{$vehiculo1->modelo}}<br>
+                            CAPACIDAD: &nbsp; {{$vehiculo1->capacidad}}
                     	</p></th>
             		</thead>
 				</table>
 
 				<table id= "alizquierda" >                       
             		<thead>
-                    	<th><p id=" " align="left">CLASE:&nbsp; Camion<br>
-                            TIPO: &nbsp; FH 13<br>
-                            CATEGORIA: &nbsp; CARGA <br>
-                            LLANTAS : &nbsp; 10 <br>
+                    	<th><p id=" " align="left">CLASE:&nbsp; {{$vehiculo1->clase}}<br>
+                            TIPO: &nbsp; {{$vehiculo1->tipo}}<br>
+                            CATEGORIA: &nbsp; {{$vehiculo1->categoria}} <br>
+                            LLANTAS : &nbsp; {{$vehiculo1->llantas}} <br>
                             &nbsp; PLACA : &nbsp;
                     	</p></th>
             		</thead>
 				</table>
 				<div id="contenedor">
-					3035-YLP
+					{{$vehiculo1->placa}}
 				</div>
 		</section>
 
 	</header>
 
-	<header id="Cvehiculoapoyo">
-		<section>
+	@php($count = 1)
+	@foreach($vehiculos_apoyo as $va)
+		<header id="Cvehiculoapoyo">
+			<section>
+				<h6 style="text-align: center">DATOS DEL VEHICULO DE APOYO ({{$count++}})</h6>    
+					<table>                       
+						<thead>
+							<th><p id=" ">MARCA: {{$va->marca}}<br>
+								COLOR: {{$va->color}} <br>
+								MODELO: {{$va->modelo}} <br>
+								CAPACIDAD: {{$va->capacidad}}
+							</p></th>
+						</thead>
+					</table>
 
- 			<h6 style="text-align: center">DATOS DEL VEHICULO DE APOYO </h6>    
-				<table>                       
-            		<thead>
-                    	<th><p id=" ">MARCA: SCANIA<br>
-                            COLOR: BLANCO <br>
-                            MODELO: MODELO <br>
-                            CAPACIDAD: 17 TON 
-                    	</p></th>
-            		</thead>
-				</table>
+					<table id= "alizquierda" >                       
+						<thead>
+							<th><p id=" " align="left">CLASE:&nbsp; {{$va->clase}}<br>
+								TIPO: &nbsp; {{$va->tipo}} <br>
+								CATEGORIA: &nbsp; {{$va->categoria}} <br>
+								LLANTAS : &nbsp; {{$va->llantas}} <br>
+								&nbsp; PLACA : &nbsp;
+							</p></th>
+						</thead>
+					</table>
 
-				<table id= "alizquierda" >                       
-            		<thead>
-                    	<th><p id=" " align="left">CLASE:&nbsp; Camion<br>
-                            TIPO: &nbsp; NK <br>
-                            CATEGORIA: &nbsp; CARGA <br>
-                            LLANTAS : &nbsp; 10 <br>
-                            &nbsp; PLACA : &nbsp;
-                    	</p></th>
-            		</thead>
-				</table>
-
-				<div id="contenedor">
-					3035-YLP
-				</div>
-		</section>
-	</header>
-
+					<div id="contenedor">
+						{{$va->placa}}
+					</div>
+			</section>
+		</header>
+	@endforeach
+	
 	<header id="ppagina">
 
 		<p id="encabezado">SELLO Y FIRMA- 23/24</p>

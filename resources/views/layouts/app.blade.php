@@ -12,20 +12,15 @@
     <title>IADR - BOLIVIA</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="apple-touch-icon" href="{!! asset('img_admin/icon/iconoIADR.png') !!}">
-    <link rel="shortcut icon" type="image/x-icon" href="{!! asset('img_admin/icon/iconoIADR.png') !!}">
+    <link rel="apple-touch-icon" href="{!! asset('img_admin/sindicato_icono.png') !!}">
+    <link rel="shortcut icon" type="image/x-icon" href="{!! asset('img_admin/sindicato_icono.png') !!}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <!-- BEGIN: Vendor CSS-->
     <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/vendors.min.css') !!}">
     <link rel="stylesheet" type="text/css" href="{!! asset('app-assets/vendors/css/forms/select/select2.min.css') !!}">
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/datatables.min.css">
-    @if(request()->is('nuevo-staff')|| request()->is('actualizar-staff/*'))
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/katex.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/monokai-sublime.min.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/quill.snow.css">
-    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/editors/quill/quill.bubble.css">
-    @endif
+
     {{-- DataTableResponsive --}}
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/DataTables/responsive/css/responsive.dataTables.css') }}"/>
     <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/spinner/jquery.bootstrap-touchspin.css">
