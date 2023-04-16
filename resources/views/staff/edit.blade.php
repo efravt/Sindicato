@@ -9,13 +9,13 @@
             <div class="content-header-left col-md-9 col-12 mb-2">
                 <div class="row breadcrumbs-top">
                     <div class="col-12">
-                        <h2 class="content-header-title float-left mb-0" style="color:black;">Directiva</h2>
+                        <h2 class="content-header-title float-left mb-0" style="color:black;">Socio</h2>
                     </div>
                     <div class="col-lg-12">
                         <div class="row">
                             <div class="col-lg-6">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item text-t"><b>Actualizar Integrante</b>
+                                    <li class="breadcrumb-item text-t"><b>Actualizar Socio</b>
                                     </li>
                                 </ol>
                             </div>
@@ -36,70 +36,40 @@
                                     <div class="form-group col-lg-12">
                                         <h4 class="card-title border-bottom py-1 mb-0 font-medium-2">Datos Personales</h4>
                                     </div>
-                                    <input type="text" value="{{ $staff->staff_id }}" id="staff_id" hidden="">
+                                    <input type="text" value="{{ $staff->codigo }}" id="codigo" hidden="">
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Nombre:</label>
-                                        <input type="text" autocomplete="off" id="name" name="name" class="form-control" placeholder="Introduzca nombre" value="{{ $staff->name }}">
+                                        <input type="text" autocomplete="off" id="nombre" name="nombre" class="form-control" placeholder="Introduzca nombre" value="{{ $staff->nombre }}">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Apellido Paterno:</label>
-                                        <input type="text" autocomplete="off" id="paternal" name="paternal" class="form-control" placeholder="Introduzca apellido paterno" value="{{ $staff->paternal }}">
+                                        <input type="text" autocomplete="off" id="paterno" name="paterno" class="form-control" placeholder="Introduzca apellido paterno" value="{{ $staff->paterno }}">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">Apellido Materno:</label>
-                                        <input type="text" autocomplete="off" id="maternal" name="maternal" class="form-control" placeholder="Introduzca apellido materno" value="{{ $staff->maternal }}">
+                                        <input type="text" autocomplete="off" id="materno" name="materno" class="form-control" placeholder="Introduzca apellido materno" value="{{ $staff->materno }}">
                                     </div>
                                     <div class="form-group col-lg-4">
                                         <span class="required-input">*</span>
                                         <label class="text-show">CI:</label>
                                         <input type="text" autocomplete="off" id="ci" name="ci" class="form-control" placeholder="Introduzca cédula de identidad" value="{{ $staff->ci }}">
                                     </div>
-                                    <div class="form-group col-lg-4">
+                                    <div class="form-group col-lg-2">
                                         <span class="required-input">*</span>
-                                        <label class="text-show">Email:</label>
-                                        <input type="text" autocomplete="off" id="email" name="email" class="form-control" placeholder="Introduzca email" value="{{ $staff->email }}">
+                                        <label class="text-show">Ingreso:</label>
+                                        <input type="text" autocomplete="off" id="ingreso" name="ingreso" class="form-control" placeholder="Introduzca ingreso" value="{{ $staff->ingreso }}">
                                     </div>
-                                    <div class="form-group col-lg-4">
+                                    <div class="form-group col-lg-2">
                                         <span class="required-input">*</span>
-                                        <label class="text-show">Celular:</label>
-                                        <input type="text" autocomplete="off" id="phone" name="phone" class="form-control" placeholder="Introduzca número de celular" value="{{ $staff->phone }}">
+                                        <label class="text-show">Numero:</label>
+                                        <input type="text" autocomplete="off" id="numero" name="numero" class="form-control" placeholder="Introduzca número de celular" value="{{ $staff->numero }}">
                                     </div>
-                                    <div class="form-group col-lg-4">
-                                        <label class="text-show">Teléfono:</label>
-                                        <input type="text" autocomplete="off" id="phone1" name="phone1" class="form-control" placeholder="Introduzca número de telefono" value="{{ $staff->phone1 }}">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">País:</label>
-                                        <input type="text" autocomplete="off" id="country" name="country" class="form-control" placeholder="Introduzca Pais" value="{{ $staff->country }}">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Departamento\Ciudad:</label>
-                                        <input type="text" autocomplete="off" id="city" name="city" class="form-control" placeholder="Ejm: La Paz, El Alto" value="{{ $staff->city }}">
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Títulos:</label>
-                                        <textarea name="specialty" id="specialty" class="form-control" cols="30" rows="3" placeholder="Ejm: Cirujano Dentista, Doctor en Ciencias ...">{{ $staff->specialty }}</textarea>
-                                    </div>
-                                    <div class="form-group col-lg-4">
-                                        <span class="required-input">*</span>
-                                        <label class="text-show">Rol:</label>
-                                        <input type="text" autocomplete="off" id="rol" name="rol" class="form-control" placeholder="Ingrese rol en la directiva" value="{{ $staff->rol }}">
-                                    </div>
-                                    
                                     <div class="form-group col-lg-4">
                                         <label class="text-show">Foto:</label>
-                                        <input type="file" accept="image/*" id="photo" name="photo" class="form-control">
-                                    </div>
-
-                                    <div class="form-group col-lg-12">
-                                        <label class="text-show">Bibliografía:</label>
-                                        <textarea name="edit_bibliography" id="edit_bibliography" class="form-control" cols="30" rows="6">{{ $staff->bibliography }}</textarea>
+                                        <input type="file" accept="image/*" id="foto" name="foto" class="form-control">
                                     </div>
                                     <div class="col-12 text-right mt-2 cancel_form">
                                         <button type="submit" class="btn btn-primary mr-1 mb-1 waves-effect waves-light save_form" id="progress-bar">
@@ -125,15 +95,15 @@
         $("#form").validate({
             rules: {
                 // Se selecciona la etiqueta según el nombre (name)
-                name: {
+                nombre: {
                     required: true,
                     minlength: 3,
                 },
-                paternal: {
+                paterno: {
                     required: true,
                     minlength: 3,
                 },
-                maternal: {
+                materno: {
                     required: true,
                     minlength: 3,
                 },
@@ -141,47 +111,27 @@
                     required: true,
                     minlength: 6,
                 },
-                email:{
-                    required: true,
-                    email: true,
-                },
-                phone:{
-                    required: true,
-                    number: true,
-                    minlength: 6,
-                },
-                phone1:{
-                    number: true,
-                    minlength: 6,
-                },
-                city: {
+                ingreso:{
                     required: true,
                     minlength: 3,
                 },
-                country: {
+                numero:{
                     required: true,
-                    minlength: 3,
-                },
-                rol:{
-                    required: true,
-                    minlength: 6,
-                },
-                specialty:{
-                    required: true,
-                    minlength: 6,
-                },
+                    number: true,
+                    minlength: 1,
+                }
             },
             messages: {
                 // Se cambia el texto de ingles a español(personalizado)
-                name: {
+                nombre: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                paternal: {
+                paterno: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                maternal: {
+                materno: {
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
@@ -189,34 +139,14 @@
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 6 caracteres.",
                 },
-                email:{
-                    required: "Este campo es requerido",
-                    email: "Por favor, introduce una dirección de correo electrónico válida."
-                },
-                phone:{
-                    required: "Este campo es requerido",
-                    number: "Por favor, ingrese un número valido.",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
-                },
-                phone1:{
-                    number: "Por favor, ingrese un número valido.",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
-                },
-                city: {
+                ingreso:{
                     required: "Este campo es requerido",
                     minlength: "Por favor, ingrese al menos 3 caracteres.",
                 },
-                country: {
+                numero:{
                     required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 3 caracteres.",
-                },
-                rol: {
-                    required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
-                },
-                specialty: {
-                    required: "Este campo es requerido",
-                    minlength: "Por favor, ingrese al menos 6 caracteres.",
+                    number: "Por favor, ingrese un número valido.",
+                    minlength: "Por favor, ingrese al menos 1 caracteres.",
                 },
             },
             // Se aplicara el error del campo dentro de un span.
@@ -225,25 +155,20 @@
             submitHandler: function(){
                 let formData = new FormData();
                 formData.append('_method', 'PUT');
-                formData.append('name', $('#name').val());
-                formData.append('paternal', $('#paternal').val());
-                formData.append('maternal', $('#maternal').val());
-                formData.append('email', $('#email').val());
+                // Datos Personales
+                formData.append('nombre', $('#nombre').val());
+                formData.append('paterno', $('#paterno').val());
+                formData.append('materno', $('#materno').val());
                 formData.append('ci', $('#ci').val());
-                formData.append('phone', $('#phone').val());
-                formData.append('phone1', $('#phone1').val());
-                formData.append('country', $('#country').val());
-                formData.append('city', $('#city').val());
-                formData.append('rol', $('#rol').val());
-                formData.append('specialty', $('#specialty').val());
-                formData.append('bibliography', $('#edit_bibliography').val());
-                formData.append('photo', $('#photo')[0].files[0]);
+                formData.append('ingreso', $('#ingreso').val());
+                formData.append('numero', $('#numero').val());
+                formData.append('foto', $('#foto')[0].files[0]);
 
                 $(".text-submit").html('Actualizando');
                 $(".save_form").attr('disabled','disabled');
 
                 $.ajax({
-                    url:     "{{ url('actualizar-staff/guardar') }}/"+$('#staff_id').val(),
+                    url:     "{{ url('actualizar-staff/guardar') }}/"+$('#codigo').val(),
                     headers: {'X-CSRF-TOKEN':$('meta[name="csrf-token"]').attr('content')},
                     method:  "POST",
                     processData:false,

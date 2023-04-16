@@ -52,7 +52,7 @@ class StaffController extends Controller
 						</button>
 					</a>
 
-')
+					')
 
                 ->rawColumns(['state', 'action'])
                 ->toJson();

@@ -39,7 +39,6 @@
                                     <thead>
                                         <tr>
                                             <th width="10">ID</th>
-                                            <th width="30">Foto</th>
                                             <th width="100">Nombre</th>
                                             <th width="100">Paternal</th>
                                             <th width="100">Maternal</th>
@@ -102,22 +101,21 @@
                 "columnDefs": [
                     {   
                         "className": "text-center", 
-                        "targets": [8,9]
+                        "targets": [7,8]
                     },
                     {   
-                        "targets": [8,9],
+                        "targets": [7,8],
                         "width": "10%"
                     },
                     {   
                         "bSortable": false, 
-                        "targets": [8,9] 
+                        "targets": [7,8] 
                     },
                 ],
                 "ajax"    : "{{ route('staff.getList') }}",
                 "columns" : [
                     {data : 'codigo'},
-                    {data : 'foto'},
-                    {data : 'nombre'},
+                    {data : 'photo'},
                     {data : 'paterno'},
                     {data : 'materno'},
                     {data : 'ci'},
